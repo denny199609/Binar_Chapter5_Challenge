@@ -41,7 +41,7 @@ class ThirdLanding : Fragment() {
             return
         }
         val intent = Intent(Intent(context, HomeActivity::class.java)).apply {
-            putExtra("nama",nama)
+            putExtra("nama",nama.trim())
         }
         startActivity(intent)
     }
